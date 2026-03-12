@@ -17,7 +17,7 @@ const workbookCache = {
 
 const i18n = {
   zh: {
-    siteName: '[姓名] | 个人主页',
+    siteName: '德胜 | 个人主页',
     loading: '正在读取网站内容.xlsx ...',
     loaded: '已根据网站内容表格自动生成页面。',
     emptySheet: '该切页暂无内容。',
@@ -29,7 +29,7 @@ const i18n = {
     pdfFail: 'PDF渲染失败：',
   },
   en: {
-    siteName: '[Name] | Personal Homepage',
+    siteName: 'Desheng | Personal Homepage',
     loading: 'Loading workbook ...',
     loaded: 'Page generated from workbook.',
     emptySheet: 'No content in this page yet.',
