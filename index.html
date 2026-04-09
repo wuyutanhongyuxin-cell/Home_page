@@ -8,8 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
@@ -17,29 +19,22 @@
 </head>
 
 <body>
-  <div class="bg-orb orb-a"></div>
-  <div class="bg-orb orb-b"></div>
-
-  <header class="topbar">
-    <div class="brand" data-i18n="siteName">德胜 | 个人主页</div>
-    <div class="controls">
-      <button id="langToggle" class="lang-toggle" aria-label="language toggle">EN</button>
-    </div>
-  </header>
-
-  <main class="layout">
-    <aside class="sidebar">
-      <nav id="tabs" class="tabs" role="tablist" aria-label="pages"></nav>
-    </aside>
-
-    <section class="content">
-      <section id="loadStatus" class="card status" aria-live="polite" data-i18n="loading">
+  <div class="wrapper">
+    <header id="sidebar">
+      <div id="sidebarContent">
+        <!-- JS 动态填充：头像、姓名、身份、院校、邮箱、社交链接 -->
+      </div>
+      <div class="sidebar-footer">
+        <button id="langToggle" class="lang-toggle" aria-label="language toggle">EN</button>
+      </div>
+    </header>
+    <section id="mainContent">
+      <div id="loadStatus" class="status" aria-live="polite" data-i18n="loading">
         正在读取网站内容.xlsx ...
-      </section>
-
-      <section id="panels" class="panels"></section>
+      </div>
+      <div id="sections"></div>
     </section>
-  </main>
+  </div>
 </body>
 
 </html>
